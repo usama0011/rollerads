@@ -1,0 +1,101 @@
+.compainContainermain {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.compainsheader {
+  display: flex;
+  padding: 12px 18px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+.compainstableContainer {
+  width: 100%;
+  overflow-x: scroll;
+}
+.iconsContainerslgoos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconsContainerslgoos > img {
+  margin-right: 10px;
+}
+/* .compainstableContainer::-webkit-scrollbar{
+    background-color: orange;
+} */
+.compainsheader > h3 {
+  color: #e4e1e6;
+}
+.compainstableContainer {
+  padding: 12px 18px;
+}
+.compainstable {
+  border-collapse: collapse;
+  text-align: left;
+}
+.tablethiitem {
+  display: flex;
+  align-items: center;
+}
+.tablethiitem > img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.compainstablth {
+  color: white;
+}
+.idinput {
+  width: 35px;
+  border: 1px solid gainsboro;
+  padding: 5px 7px;
+  outline: none;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #e4e1e6;
+}
+.nameinput {
+  border: 1px solid gainsboro;
+  width: 150px;
+  padding: 5px;
+  outline: none;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #e4e1e6;
+}
+.mystatusselect {
+  background-color: #1b1b1f;
+  color: #e4e1e6;
+  padding: 5px;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+}
+.mystatusselect > option:hover {
+  background-color: #1b1b1f !important;
+}
+.dateranger {
+  background-color: #1b1b1f;
+  color: #e4e1e6;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.compainstableContainer > table > thead > tr > th {
+  padding: 15px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+td {
+  padding: 10px;
+}

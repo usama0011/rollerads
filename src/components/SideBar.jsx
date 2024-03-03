@@ -18,9 +18,9 @@ const SideBar = () => {
         <img src={MyLog} className="mylogoweb" alt="" />
       </div>
       <div className="menuitemscontainer">
-        <div className="compainContainer">
+        <div style={{cursor:"pointers"}} className="compainContainer">
           <img className="icon" src={PlusIcon} alt="" />
-          <p>New Campaigns</p>
+          <p>New Campaign</p>
         </div>
         <NavLink
           style={({ isActive }) => ({
