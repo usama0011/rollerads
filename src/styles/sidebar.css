@@ -1,0 +1,43 @@
+.logocontainer {
+  width: 97px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.mylogoweb {
+  width: 100%;
+  height: 100%;
+}
+.compainContainer {
+  display: flex;
+  align-items: center;
+  border: 2px solid gainsboro;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.menuitemscontainer > a {
+  color: unset;
+  text-decoration: none;
+}
+.compainContainer > p {
+  white-space: nowrap;
+}
+.icon {
+  margin-right: 10px;
+}
+.rr {
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.rr > p {
+  font-size: 14px;
+}
+.menuitemscontainer {
+  margin-top: 50px;
+}
