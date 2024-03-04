@@ -18,10 +18,12 @@ const SideBar = () => {
         <img src={MyLog} className="mylogoweb" alt="" />
       </div>
       <div className="menuitemscontainer">
-        <div style={{cursor:"pointers"}} className="compainContainer">
+       <NavLink to="/campaigns/new">
+       <div style={{cursor:"pointers"}} className="compainContainer">
           <img className="icon" src={PlusIcon} alt="" />
           <p>New Campaign</p>
         </div>
+       </NavLink>
         <NavLink
           style={({ isActive }) => ({
             backgroundColor: isActive ? "red" : "", 

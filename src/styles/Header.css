@@ -2,17 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 10px 0px;
+  padding-bottom: 25px;
   border-bottom: 1px solid gainsboro;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .headerLeftcontaienr {
   display: flex;
   align-items: center;
 }
-.iconContainerheader{
-    margin-right: 30px;
+.iconContainerheader {
+  margin-right: 30px;
 }
-
 
 .titlehaeder {
   font-weight: bold;

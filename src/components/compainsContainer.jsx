@@ -128,6 +128,7 @@ const CompainContainer = () => {
                 </td>
                 <td>
                   <select name="status" id="status" className="mystatusselect">
+                    <option value="4 values">4 Values</option>
                     <option value="4 values">Active</option>
                     <option value="4 values">Paused</option>
                     <option value="4 values">Stopped</option>

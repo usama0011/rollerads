@@ -3,12 +3,9 @@ import SideBar from '../components/SideBar'
 
 const Reprots = () => {
   return (
-    <div className="maincontainer">
-    <div className="sidebar">
-      <SideBar />
+    <div className="reportscontainermain">
+      reports are here
     </div>
-    <div>Main container Reports</div>
-  </div>
   )
 }
 

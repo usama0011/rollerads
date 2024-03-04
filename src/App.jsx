@@ -7,24 +7,23 @@ import { Link } from "react-router-dom";
 const App = () => {
   return (
     <div className="maincontainer">
-      <div className="sidebar">
-        <SideBar />
-      </div>
       <div className="contentconatiner">
-        <Header />
+        <Header routename="Campaigns" />
         <div className="sommingConatiner">
           <p className="tagline">
             🔥Smoking hot! Check out a new profitable offer from CpaRoll —{" "}
             <span>
               <Link to="https://platform.cparoll.com/offers/890">
-                AVG Mobile Security WW 
+                AVG Mobile Security WW
               </Link>{" "}
-            </span>{"  "}
+            </span>
+            {"  "}
             for Android and iOS. Performs strong on our traffic.
           </p>
-          <p>Dismiss</p>
+          <p style={{ cursor: "pointer" }}>Dismiss</p>
         </div>
         <CompainContainer />
+       
       </div>
     </div>
   );

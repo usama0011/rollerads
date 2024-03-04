@@ -3,12 +3,9 @@ import SideBar from "../components/SideBar";
 
 const Creatives = () => {
   return (
-    <div className="maincontainer">
-      <div className="sidebar">
-        <SideBar />
-      </div>
-      <div>Main container createive</div>
-    </div>
+  <div className="createtivepagehere">
+    createtivepage
+  </div>
   );
 };
 

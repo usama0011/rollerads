@@ -3,7 +3,7 @@ import "../styles/Header.css";
 import UserIcon from "../assets/user.svg";
 import WallatIcon from "../assets/wall.svg";
 import MenuIcon from "../assets/menu.svg";
-const Header = () => {
+const Header = ({routename}) => {
   return (
     <div className="headerContainer">
       <div className="headerLeftcontaienr">
@@ -11,7 +11,7 @@ const Header = () => {
           <img src={MenuIcon} alt="" />
         </div>
         <div>
-          <h2 className="titlehaeder">Compaigns</h2>
+          <h2 className="titlehaeder">{routename}</h2>
         </div>
       </div>
       <div className="headerRightcontaienr">

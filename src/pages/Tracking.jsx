@@ -3,12 +3,9 @@ import SideBar from "../components/SideBar";
 
 const Tracking = () => {
   return (
-    <div className="maincontainer">
-      <div className="sidebar">
-        <SideBar />
-      </div>
-      <div>Main container Tracking</div>
-    </div>
+   <div className="trackingContainer">
+    Tarcking page here
+   </div>
   );
 };
 

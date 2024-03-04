@@ -1,0 +1,104 @@
+.boxescompainsoverallsectoin {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.boxescompainsoverallsectoin {
+  display: flex;
+
+  padding-top: 15px;
+  padding-right: 15px;
+}
+.sectionleftonebeyong {
+  width: 70%;
+}
+.sectionrightonebeyong {
+  width: 30%;
+  border: 1px solid gainsboro;
+  height: 500px;
+  border-radius: 5px;
+  position: sticky;
+  top: 50px;
+}
+.sectionone {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.boxesgridonesection {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.sectononetop > h3 {
+  color: #e4e1e6;
+}
+.sectononetop {
+  border-radius: 5px;
+  padding: 15px;
+}
+.boxesgridonesection > div {
+  margin-right: 10px;
+  width: 80px;
+  height: 119px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.boxesgridonesection > div > h4 {
+  color: #e4e1e6;
+  font-size: 15px;
+  border-bottom: 1px dotted gainsboro;
+}
+.boxesgridonesection > div:nth-child(1) {
+  border: 1px solid gainsboro;
+}
+.boxesgridonesection > div:nth-child(2) {
+  background-color: #23232b;
+}
+.boxesgridonesection > div:nth-child(3) {
+  background-color: #23232b;
+}
+.boxesgridonesection > div:nth-child(4) {
+  background-color: #23232b;
+}
+.sectionrightonebeyong {
+  padding: 15px;
+}
+.sectionrightonebeyong > h3 {
+  color: #e4e1e6;
+  margin-bottom: 10px;
+}
+.lstcontentecontinaer {
+  display: flex;
+  flex-direction: column;
+}
+.lstcontentecontinaer > div {
+  border-bottom: 1px solid gainsboro;
+  padding: 11px 0px;
+  margin-left: 20px;
+  color: #e4e1e6;
+}
+.lisitimtesingle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lisitimtesingle:hover {
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+.lisitimtesingle > p {
+  font-size: 14px;
+}
+.bordercontainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid gainsboro;
+}
+.lstcontentecontinaer > div:last-child{
+    border-bottom: none;
+}
