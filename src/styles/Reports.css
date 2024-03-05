@@ -1,0 +1,130 @@
+.reaportsfiltercontainer {
+  padding: 15px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.filerreportsbody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 50px 0px;
+}
+.reportfiheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reportfiheader > h3 {
+  color: #e4e1e6;
+}
+.reportsdivItem {
+  position: relative;
+}
+.reportsdivItem > div > input {
+  width: 100%;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #23232b;
+  padding: 8px 20px;
+}
+.avafi {
+  border: none;
+}
+.optionsContainer {
+  position: absolute;
+  top: 10px;
+  z-index: 999;
+  width: 100%;
+}
+.reportfilterrightside {
+  color: #e4e1e6;
+}
+
+.datePickerContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  background-color: #1b1b1f;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+}
+.daterngaertopconainer {
+  display: flex;
+}
+.leftSideButtons {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gainsboro;
+}
+.leftSideButtons > button {
+  padding: 8px 26px;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  background-color: transparent;
+  color: #e4e1e6;
+  text-align: left;
+}
+input {
+  color: #e4e1e6;
+}
+.dadddd {
+  color: #e4e1e6;
+}
+.datePicker {
+  background-color: #23232b;
+  position: relative;
+}
+.uuper {
+  display: flex;
+  align-items: center;
+}
+.uuper > div {
+  padding: 0px 15px;
+}
+.chosenDateButtons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 10px 0px;
+  color: #e4e1e6;
+}
+.chosenDateButtons > p {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.chosenDateButtons > button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #e4e1e6;
+  border: 1px solid gainsboro;
+}
+.react-datepicker {
+  background-color: #23232b;
+}
+.reporttableherader > h3 {
+  color: #e4e1e6;
+}
+.reportstalbContainer {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 15px;
+}
+.reporttableherader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}

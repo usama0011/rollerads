@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import "../styles/Header.css";
-import UserIcon from "../assets/user.svg";
 import WallatIcon from "../assets/wall.svg";
 import MenuIcon from "../assets/menu.svg";
-const Header = ({routename}) => {
+import { CreditCardIcon, UserIcon } from "@heroicons/react/24/solid";
+const Header = ({ routename }) => {
+  const [currentTime, setCurrentTime] = useState("");
+  useEffect(() => {
+    // Function to update current time every second
+    document.title= "Campaings . RollerAds"
+    const updateTime = () => {
+      const date = new Date();
+      const options = {
+        timeZone: "UTC", // Set timezone to UTC
+        day: "2-digit", // Display day with leading zero
+        month: "short", // Display month as abbreviation
+        hour: "2-digit", // Display hours
+        minute: "2-digit", // Display minutes
+        hour12: false, // Use 24-hour format
+      };
+      setCurrentTime(date.toLocaleTimeString("en-US", options));
+    };
+
+    // Update time initially and set interval to update it every second
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+
+    // Cleanup function to clear interval
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="headerContainer">
       <div className="headerLeftcontaienr">
@@ -15,16 +40,16 @@ const Header = ({routename}) => {
         </div>
       </div>
       <div className="headerRightcontaienr">
-        <div className="timecontainer">03 Mar 04:58 (UTC)</div>
+        <div className="timecontainer">{currentTime}  (UTC)</div>
         <div className="balanceContainer">
           <img src={WallatIcon} alt="" />
-          <span>Balance:$0.55</span>
+          <span>Balance:$17583.93</span>
         </div>
         <div className="volteContainer">
-          <img src={WallatIcon} alt="" />
+          <CreditCardIcon className="creditcardionc" />
         </div>
         <div className="userecontainer">
-          <img src={UserIcon} alt="" />
+          <UserIcon className="creditcardionc" />
         </div>
       </div>
     </div>

@@ -1,7 +1,9 @@
-import React from "react";
-import SideBar from "../components/SideBar";
+import React, { useEffect } from "react";
 
 const Tracking = () => {
+  useEffect(() => {
+    document.title = "Tracking . RollerAds";
+  }, []);
   return (
    <div className="trackingContainer">
     Tarcking page here

@@ -16,7 +16,12 @@
 .iconContainerheader {
   margin-right: 30px;
 }
-
+.creditcardionc {
+  width: 18px;
+  height: 18px;
+  color: #e4e1e6;
+  
+}
 .titlehaeder {
   font-weight: bold;
   color: #e4e1e6;

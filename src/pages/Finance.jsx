@@ -1,7 +1,9 @@
-import React from "react";
-import SideBar from "../components/SideBar";
+import React, { useEffect } from "react";
 
 const Finance = () => {
+  useEffect(() => {
+    document.title = "Finance . RollerAds";
+  }, []);
   return (
    <div className="financepagehere">
     Finanace page here

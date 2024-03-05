@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Newcompain.css";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
@@ -15,6 +15,7 @@ import Tooltip from "../assets/tooltip.svg";
 import ArrowDownIcon from "../assets/arrowdown.svg";
 import SmielFaceSVG from "../assets/smile.svg";
 import AddIcon from "../assets/plus.svg";
+import { FaceSmileIcon } from "@heroicons/react/24/solid";
 const NewCompaing = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -221,7 +222,7 @@ const NewCompaing = () => {
     "Yemen",
     "Zambia",
     "Zimbabwe",
-]);
+  ]);
 
   const handleInputChange = (e, setInputState) => {
     setInputState(e.target.value);
@@ -266,6 +267,9 @@ const NewCompaing = () => {
   const handleToggleOptions = () => {
     setshowCountiresOption((prev) => !prev);
   };
+  useEffect(() => {
+    document.title = "New campaing. Campaings . RollerAds";
+  }, []);
   return (
     <div className="maincontainer">
       <div className="contentconatiner">
@@ -521,7 +525,7 @@ const NewCompaing = () => {
               </div>
               <div className="emojitextcontinaer">
                 <div className="facecontainer">
-                  <img src={SmielFaceSVG} alt="" />
+                  <FaceSmileIcon className="smile"/>
                 </div>
                 <div className="inputemoijinut">
                   <input
@@ -537,7 +541,7 @@ const NewCompaing = () => {
               </div>
               <div className="emojitextcontinaer">
                 <div className="facecontainer">
-                  <img src={SmielFaceSVG} alt="" />
+                <FaceSmileIcon className="smile"/>
                 </div>
                 <div className="inputemoijinut">
                   <input
@@ -591,7 +595,7 @@ const NewCompaing = () => {
                 <input
                   type="text"
                   value={selectedCountry}
-                  onChange={(e)=>setSelectedCountry(e.target.value)}
+                  onChange={(e) => setSelectedCountry(e.target.value)}
                   placeholder="Select country"
                   className="custominput"
                   readOnly

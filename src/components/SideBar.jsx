@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/sidebar.css";
 import MyLog from "../assets/ads.svg";
-import PlusIcon from "../assets/plus.svg";
 import HelpIcon from "../assets/help.svg";
 import RatesIcon from "../assets/rates.svg";
 import ImageIcon from "../assets/image.svg";
@@ -10,67 +9,138 @@ import StatsIcon from "../assets/stats.svg";
 import MickIcon from "../assets/mick.svg";
 import MoneyIcon from "../assets/money.svg";
 import { NavLink } from "react-router-dom";
+import {
+  ArrowTrendingUpIcon,
+  CurrencyDollarIcon,
+  GlobeAsiaAustraliaIcon,
+  MegaphoneIcon,
+  NewspaperIcon,
+  PhotoIcon,
+  PlusIcon,
+  QuestionMarkCircleIcon,
+} from "@heroicons/react/24/solid";
 
 const SideBar = () => {
   return (
     <div className="sidebarcontainer">
       <div className="logocontainer">
-        <img src={MyLog} className="mylogoweb" alt="" />
+        <img src="https://my.rollerads.com/img/ra_logo_dark.d49d937b.svg" className="mylogoweb" alt="" />
       </div>
       <div className="menuitemscontainer">
-       <NavLink to="/campaigns/new">
-       <div style={{cursor:"pointers"}} className="compainContainer">
-          <img className="icon" src={PlusIcon} alt="" />
-          <p>New Campaign</p>
+        <div className="rr  dd">
+          <NavLink
+            to="/campaigns/new"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            className="menuitemsingle borone"
+          >
+            <PlusIcon className="plusss" />
+            <p>New Campaign</p>
+          </NavLink>
         </div>
-       </NavLink>
-        <NavLink
-          style={({ isActive }) => ({
-            backgroundColor: isActive ? "red" : "", 
-          })}
-          to="/campaigns"
-        >
-          <div className="rr">
-            <img className="icon" src={MickIcon} alt="" />
+        <br />
+        
+        <div className="rr">
+          <NavLink
+            to="/campaigns"
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+          >
+          <MegaphoneIcon className="plusss"/>
             <p>Campaings</p>
-          </div>
-        </NavLink>
-        <NavLink to="/reports">
-          <div className="rr">
-            <img className="icon" src={StatsIcon} alt="" />
+          </NavLink>
+        </div>
+        <div className="rr">
+          <NavLink
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            to="/reports"
+          >
+           <ArrowTrendingUpIcon className="plusss"/>
             <p>Reports</p>
-          </div>
-        </NavLink>
-        <NavLink to="/tracking">
-          <div className="rr">
-            <img className="icon" src={TradeIcon} alt="" />
+          </NavLink>
+        </div>
+        <div className="rr">
+          <NavLink
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            to="/tracking"
+          >
+           <GlobeAsiaAustraliaIcon className="plusss"/>
             <p>Tracking</p>
-          </div>
-        </NavLink>
-        <NavLink to="/finance">
-          <div className="rr">
-            <img className="icon" src={MoneyIcon} alt="" />
+          </NavLink>
+        </div>
+        <div className="rr">
+          <NavLink
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            to="/finance"
+          >
+          <CurrencyDollarIcon className="plusss" />
             <p>Finance</p>
-          </div>
-        </NavLink>
-        <NavLink to="/creatives">
-          <div className="rr">
-            <img className="icon" src={ImageIcon} alt="" />
+          </NavLink>
+        </div>
+        <div className="rr">
+          <NavLink
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            to="/creatives"
+          >
+            <PhotoIcon className="plusss" />
             <p>Creatives</p>
-          </div>
-        </NavLink>
-        <NavLink to="/rates">
-          <div className="rr">
-            <img className="icon" src={RatesIcon} alt="" />
+          </NavLink>
+        </div>
+        <div className="rr">
+          <NavLink
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            to="/rates"
+          >
+            <NewspaperIcon className="plusss" />
             <p>Rates</p>
-          </div>
-        </NavLink>
-        <NavLink to="/helpcenter">
-          <div className="rr">
-            <img className="icon" src={HelpIcon} alt="" />
+          </NavLink>
+        </div>
+        <div className="rr">
+          <NavLink
+            className="menuitemsingle"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                backgroundColor: isActive ? "#2b2c35" : "",
+              };
+            }}
+            to="/helpcenter"
+          >
+            <QuestionMarkCircleIcon className="plusss" />
             <p>Help Center</p>
-          </div>
-        </NavLink>
+          </NavLink>
+        </div>
       </div>
     </div>
   );
