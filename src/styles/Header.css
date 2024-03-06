@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 10px 0px;
   padding-bottom: 25px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(139, 139, 139);;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -20,7 +20,6 @@
   width: 18px;
   height: 18px;
   color: #e4e1e6;
-  
 }
 .titlehaeder {
   font-weight: bold;
@@ -37,7 +36,7 @@
 .balanceContainer {
   display: flex;
   align-items: center;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);;
   border-radius: 5px;
   padding: 8px 12px;
 }
@@ -55,7 +54,7 @@
 .volteContainer,
 .userecontainer,
 .iconContainerheader {
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);;
   padding: 8px 10px;
   border-radius: 5px;
   display: flex;

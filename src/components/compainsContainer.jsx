@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/compainsContainer.css";
 import HeaderIcon from "../assets/header.svg";
-import CheckboxIcon from "../assets/checkbox.svg";
 import InstaLogo from "../assets/insta.svg";
 import {
   ChartBarSquareIcon,
@@ -361,7 +360,12 @@ const CompainContainer = () => {
     );
     setFilteredData(results);
   };
-
+  const toggleDropdown = (dropdown) => {
+    setDropdownState((prevState) => ({
+      ...prevState,
+      [dropdown]: !prevState[dropdown],
+    }));
+  };
   const options = [
     { value: "4values", label: "4 values" },
     { value: "active", label: "Active" },
@@ -396,30 +400,21 @@ const CompainContainer = () => {
     setSelectedValue(value);
     handleFilter(key, value);
     // Toggle dropdown state
-    setDropdownState((prevState) => ({
-      ...prevState,
-      status: !prevState.status,
-    }));
+    toggleDropdown("status");
   };
 
   const handleSelectOptionAds = (value) => {
     setSelectedValueAds(value);
     handleFilter("adFormat", value);
     // Toggle dropdown state
-    setDropdownState((prevState) => ({
-      ...prevState,
-      adFormat: !prevState.adFormat,
-    }));
+    toggleDropdown("adFormat");
   };
 
   const handleSelectOptionTypes = (value) => {
     setSelectedValuetypes(value);
     handleFilter("type", value);
     // Toggle dropdown state
-    setDropdownState((prevState) => ({
-      ...prevState,
-      type: !prevState.type,
-    }));
+    toggleDropdown("type");
   };
   const totalPages = Math.ceil(filteredData.length / rowsPerPage);
   const indexOfLastRow = currentPage * rowsPerPage;
@@ -430,7 +425,6 @@ const CompainContainer = () => {
     if (pageNumber < 1 || pageNumber > totalPages) return;
     setCurrentPage(pageNumber);
   };
-
   return (
     <>
       <div className="compainContainermain">
@@ -535,8 +529,9 @@ const CompainContainer = () => {
                 </th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody className="ccccctablebody">
+              <br />
+              <tr className="myrrrrrrr">
                 <td>
                   <label class="yycontainer">
                     <input type="checkbox" />
@@ -548,11 +543,18 @@ const CompainContainer = () => {
                     type=""
                     className="seasrchid"
                     placeholder="ID"
+                  
+                  />
+                </td>
+                <td>
+                  <input
+                    type=""
+                    className="nameinput"
+                    placeholder="4 values"
                     value={searchTerm}
                     onChange={handleSearch}
                   />
                 </td>
-                <td></td>
                 <td>
                   <div className="customDropdownContainer">
                     <div

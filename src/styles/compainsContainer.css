@@ -1,5 +1,5 @@
 .compainContainermain {
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 5px;
 }
 
@@ -8,7 +8,7 @@
   padding: 12px 18px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(139, 139, 139);
 }
 .compainstableContainer {
   width: 100%;
@@ -35,7 +35,7 @@
 
 .idinput {
   width: 35px;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   padding: 5px 7px;
   outline: none;
   height: 30px;
@@ -44,7 +44,7 @@
   color: #e4e1e6;
 }
 .nameinput {
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   width: 150px;
   padding: 5px;
   outline: none;
@@ -70,7 +70,7 @@
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   height: 30px;
   display: flex;
   align-items: center;
@@ -113,6 +113,7 @@
   color: #e4e1e6;
   border-collapse: collapse;
 }
+
 .campaignsTable th {
   font-size: 14px;
 }
@@ -121,6 +122,7 @@
   padding: 8px;
   cursor: pointer;
   white-space: nowrap;
+  font-size: 14px;
 }
 
 .campaignsTable th {
@@ -129,6 +131,9 @@
 
 .campaignsTable tbody tr:nth-child(even) {
   background-color: #23232b;
+}
+.campaignsTable tbody tr:nth-child(2) {
+  background-color: none;
 }
 .tablesingledivvv {
   display: flex;
@@ -139,7 +144,7 @@
   background-color: #1b1b1f;
   padding: 8px 15px;
   border-radius: 5px;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-width: 0.2px;
 }
 .myckbbbx {
@@ -149,7 +154,7 @@
   /* Add any additional styles you need */
 }
 .companinnammedooted {
-  border-bottom: 0.3px dotted gainsboro;
+  border-bottom: 0.3px dotted rgb(139, 139, 139);
   width: fit-content;
 }
 .statuscontainer {
@@ -173,7 +178,7 @@
   height: 35px;
   border-radius: 5px;
   padding: 0;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
 }
 .mycompainlargetitlt[mycuststylebar="paused"] {
   background-color: #574500;
@@ -259,7 +264,7 @@
   height: 18px;
   width: 18px;
   background-color: transparent;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 2px;
 }
 

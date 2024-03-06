@@ -3,7 +3,7 @@
   top: 50px;
 }
 .boxescompainsoverallsectoin {
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   border-radius: 10px;
   padding: 15px;
 }
@@ -17,7 +17,7 @@
 }
 .sectionrightonebeyong {
   width: 30%;
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);;
   height: 500px;
   border-radius: 5px;
   position: sticky;
@@ -25,7 +25,7 @@
 }
 .sectionone {
   padding-bottom: 20px;
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   border-radius: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -57,10 +57,10 @@
 .boxesgridonesection > div > h4 {
   color: #e4e1e6;
   font-size: 15px;
-  border-bottom: 1px dotted gainsboro;
+  border-bottom: 1px dotted rgb(139, 139, 139);
 }
 .boxesgridonesection > div:nth-child(1) {
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
 }
 .boxesgridonesection > div:nth-child(2) {
   background-color: #23232b;
@@ -83,7 +83,7 @@
   flex-direction: column;
 }
 .lstcontentecontinaer > div {
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(139, 139, 139);
   padding: 11px 0px;
   margin-left: 20px;
   color: #e4e1e6;
@@ -103,7 +103,7 @@
 .bordercontainer {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-left: 1px solid gainsboro;
+  border-left: 1px solid rgb(139, 139, 139);
 }
 .lstcontentecontinaer > div:last-child {
   border-bottom: none;
@@ -144,11 +144,11 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: none;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(139, 139, 139);
 }
 .optionsContainer {
   background-color: #1b1b1f;
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   color: #e4e1e6;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -233,14 +233,14 @@
   outline: none;
   border: none;
   color: #e4e1e6;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(139, 139, 139);
 }
 .requiredText {
   margin-right: 10px;
 }
 .createiveheader {
   display: flex;
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   width: fit-content;
   padding: 15px;
   background-color: #2b2c35;
@@ -271,7 +271,7 @@
   margin-right: 10px;
 }
 .genreatebuttonsredion > div:first-child {
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -345,7 +345,7 @@
   width: 100%;
 }
 .facecontainer {
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   height: 50px;
   width: 50px;
   border-radius: 10px;
@@ -402,7 +402,7 @@
   margin-right: 10px;
 }
 .previewbuttonsconainer > div:first-child {
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
 }
 .previewbuttonsconainer > div > p {
   margin-left: 10px;
@@ -446,7 +446,7 @@
   color: #ffffef;
 }
 .sectionpreview {
-  border: 0.5px solid gainsboro;
+  border: 0.5px solid rgb(139, 139, 139);
   border-radius: 10px;
 }
 .sectionpreview > h3 {
@@ -461,7 +461,7 @@
 .addcreateubuttons {
   display: flex;
   align-items: center;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   width: fit-content;
   padding: 8px 10px;
   border-radius: 10px;
@@ -489,7 +489,7 @@
 .seasrchid {
   width: 40px;
   padding: 5px 10px;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 5px;
   background-color: transparent;
   color: #e4e1e6;
@@ -498,7 +498,7 @@
 .seasrchname {
   width: 150px;
   padding: 5px 10px;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 5px;
   background-color: transparent;
   color: #e4e1e6;
@@ -584,6 +584,6 @@
   height: 30px;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   font-size: 14px;
 }

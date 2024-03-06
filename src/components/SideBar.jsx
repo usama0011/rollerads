@@ -24,25 +24,29 @@ const SideBar = () => {
   return (
     <div className="sidebarcontainer">
       <div className="logocontainer">
-        <img src="https://my.rollerads.com/img/ra_logo_dark.d49d937b.svg" className="mylogoweb" alt="" />
+        <img
+          src="https://my.rollerads.com/img/ra_logo_dark.d49d937b.svg"
+          className="mylogoweb"
+          alt=""
+        />
       </div>
       <div className="menuitemscontainer">
-        <div className="rr  dd">
+        <div className="">
           <NavLink
+            className="newcompainhere"
             to="/campaigns/new"
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
               };
             }}
-            className="menuitemsingle borone"
           >
-            <PlusIcon className="plusss" />
-            <p>New Campaign</p>
+            <PlusIcon className="plussss" />
+            <p>New Campaing</p>
           </NavLink>
         </div>
         <br />
-        
+
         <div className="rr">
           <NavLink
             to="/campaigns"
@@ -53,7 +57,7 @@ const SideBar = () => {
               };
             }}
           >
-          <MegaphoneIcon className="plusss"/>
+            <MegaphoneIcon className="plusss" />
             <p>Campaings</p>
           </NavLink>
         </div>
@@ -67,7 +71,7 @@ const SideBar = () => {
             }}
             to="/reports"
           >
-           <ArrowTrendingUpIcon className="plusss"/>
+            <ArrowTrendingUpIcon className="plusss" />
             <p>Reports</p>
           </NavLink>
         </div>
@@ -81,7 +85,7 @@ const SideBar = () => {
             }}
             to="/tracking"
           >
-           <GlobeAsiaAustraliaIcon className="plusss"/>
+            <GlobeAsiaAustraliaIcon className="plusss" />
             <p>Tracking</p>
           </NavLink>
         </div>
@@ -95,7 +99,7 @@ const SideBar = () => {
             }}
             to="/finance"
           >
-          <CurrencyDollarIcon className="plusss" />
+            <CurrencyDollarIcon className="plusss" />
             <p>Finance</p>
           </NavLink>
         </div>

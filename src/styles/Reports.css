@@ -1,6 +1,6 @@
 .reaportsfiltercontainer {
   padding: 15px;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 5px;
   margin-bottom: 20px;
 }
@@ -20,12 +20,13 @@
 }
 .reportsdivItem {
   position: relative;
+  width: 100% !important;
 }
 .reportsdivItem > div > input {
   width: 100%;
   height: 50px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  height: 50px;
   outline: none;
   border: none;
   background-color: #23232b;
@@ -38,8 +39,10 @@
   position: absolute;
   top: 10px;
   z-index: 999;
-  width: 100%;
+  width: 100% !important;
+  overflow-y: scroll;
 }
+
 .reportfilterrightside {
   color: #e4e1e6;
 }
@@ -47,7 +50,7 @@
 .datePickerContainer {
   display: flex;
   flex-direction: column;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   background-color: #1b1b1f;
   border-radius: 5px;
   position: absolute;
@@ -62,7 +65,7 @@
 .leftSideButtons {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid gainsboro;
+  border-right: 1px solid rgb(139, 139, 139);
 }
 .leftSideButtons > button {
   padding: 8px 26px;
@@ -109,22 +112,265 @@ input {
   border-radius: 5px;
   background-color: transparent;
   color: #e4e1e6;
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
 }
 .react-datepicker {
   background-color: #23232b;
 }
+
 .reporttableherader > h3 {
   color: #e4e1e6;
 }
 .reportstalbContainer {
-  border: 1px solid gainsboro;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 5px;
-  padding: 15px;
 }
 .reporttableherader {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 15px;
+  border-bottom: 1px solid rgb(139, 139, 139);
+}
+.parentcomapinstablecontainer {
+  overflow-x: auto;
+  padding: 0;
+}
 
+.onemoretalbe th,
+.onemoretalbe td {
+  padding: 15px !important;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.onemoretalbe th {
+  text-align: left;
+}
+.onemoretalbe td {
+  font-size: 14px;
+}
+.footbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footbuttons > div {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  outline: none;
+  color: #e4e1e6;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.footbuttons > div:first-child {
+  border: 1px solid rgb(139, 139, 139);
+}
+.footbuttons > div:last-child {
+  border: 1px solid rgb(139, 139, 139);
+}
+
+.footbuttons > div > img {
+  margin-right: 10px;
+}
+.footbuttons > div:hover {
+  background-color: #2b2c35;
+}
+.reportsdivItem > div > input:hover {
+  background-color: #2b2c35;
+  cursor: pointer;
+}
+.optionsContainer > div {
+  padding: 15px 10px;
+}
+.countriescontainer {
+  padding: 15px 20px !important;
+}
+.wwww {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4e1e6;
+}
+.plusiconcintainer {
+  width: 60px;
+  height: 50px;
+  background-color: #23232b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.workkkk {
+  display: flex;
+  align-items: center;
+}
+
+.comapaintogglecontainer {
+  display: flex;
+  align-items: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 0px;
+  background-color: #1b1b1f;
+  border: 1px solid gainsboro;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #46464e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #46464e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.datedatedate {
+  position: relative;
+}
+.mycustomadedateranger {
+  position: absolute;
+  top: 56px;
+  background-color: #1b1b1f;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 5px;
+  z-index: 1000;
+  color: #e4e1e6;
+  display: flex;
+}
+.ranges {
+  border-right: 1px solid rgb(139, 139, 139);
+}
+/* Style for the ranges list */
+.ranges ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.ranges ul li {
+  cursor: pointer;
+  padding: 5px;
+  white-space: nowrap;
+  padding: 9px 30px;
+  font-size: 14px;
+}
+.ranges ul li:hover {
+  background-color: #23232b;
+}
+/* Style for the calendar */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0px 20px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  font-size: 13px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Style for the calendar header */
+
+/* Style for the selected date */
+.calendar-table .active {
+  background-color: #2b2c35;
+  color: #fff;
+}
+
+/* Style for the buttons */
+.drp-buttons {
+  margin-top: 10px;
+  border-right: 1px solid rgb(139, 139, 139);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.drp-selected {
+  margin-right: 15px;
+}
+.drp-buttons button {
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 12px;
+  cursor: pointer;
+  color: #e4e1e6;
+  border: 1px solid rgb(139, 139, 139);
+}
+
+/* Style for the time selectors */
+.calendar-time select {
+  width: 60px;
+}
+
+/* Style for disabled options */
+.calendar-time .disabled {
+  color: #ccc;
+}
+.flextopcontainer {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgb(139, 139, 139);
 }

@@ -3,7 +3,7 @@
   height: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .sidebarcontainer {
   background-color: #1b1b1f;
@@ -58,13 +58,30 @@
   text-decoration: none;
   white-space: nowrap;
 }
+.newcompainhere {
+  display: flex;
+  color: #e4e1e6;
+  width: 160px;
+  padding: 12px 5px;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid gainsboro;
+  text-decoration: none;
+  white-space: nowrap;
+}
 .plusss {
   width: 16px;
   height: 16px;
   color: #e4e1e6;
   margin-right: 10px;
 }
-.borone{
-  border: 1px solid gainsboro;
+.plussss {
+  width: 20px;
+  height: 20px;
+  color: #e4e1e6;
+  margin-right: 10px;
+}
+.borone {
+  border: 1px solid rgb(139, 139, 139);
   width: 160px;
 }
