@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import "../styles/Reports.css";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import TableEYEIcon from "../assets/tableeye.svg";
 import DownlaodIcon from "../assets/download.svg";
 import RefreshSVG from "../assets/refresh.svg";
