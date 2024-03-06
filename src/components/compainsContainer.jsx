@@ -137,7 +137,7 @@ const CompainContainer = () => {
     {
       id: 175932,
       name: "UNB Solar DR",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -156,7 +156,7 @@ const CompainContainer = () => {
     {
       id: 849206,
       name: "UNB Roofing DR",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -175,7 +175,7 @@ const CompainContainer = () => {
     {
       id: 320574,
       name: "UNB Bathroom XR",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -194,7 +194,7 @@ const CompainContainer = () => {
     {
       id: 702185,
       name: "UNB KIT DR",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -213,7 +213,7 @@ const CompainContainer = () => {
     {
       id: 465823,
       name: "ADS SO 1",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -233,7 +233,7 @@ const CompainContainer = () => {
     {
       id: 189342,
       name: "ADS 2 Insurance PP",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -253,7 +253,7 @@ const CompainContainer = () => {
     {
       id: 873412,
       name: "ADS 3 New Solar",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -272,7 +272,7 @@ const CompainContainer = () => {
     {
       id: 540921,
       name: "Test ADS Home RR",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",
@@ -310,7 +310,7 @@ const CompainContainer = () => {
     {
       id: 713594,
       name: "Test Native.",
-      status: "Archived",
+      status: "Active",
       adFormat: "Banner",
       type: "SmartCPM",
       bid: "$0.50",

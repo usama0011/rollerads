@@ -331,6 +331,7 @@ input:checked + .slider:before {
 .calendar-table .active {
   background-color: #2b2c35;
   color: #fff;
+  border-radius: 5px;
 }
 
 /* Style for the buttons */

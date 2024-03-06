@@ -3,7 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: rgb(228, 225, 230);
+  font-size: 14px;
+  line-height: 16px;
+}
 .main-container {
   display: flex;
   position: relative;
@@ -25,11 +31,4 @@
   padding: 20px;
   overflow-y: auto; /* Enable vertical scrolling */
   background-color: #1b1b1f;
-}
-.bottomright{
-  position: absolute;
-  bottom: 200px;
-  right: 0;
-  z-index: 999;
-  background-color: red;
 }

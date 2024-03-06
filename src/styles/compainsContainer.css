@@ -192,6 +192,13 @@
   border-radius: 5px;
   font-size: 14px;
 }
+.mycompainlargetitlt[mycuststylebar="Active"] {
+  background-color: #00533e;
+  color: #0ece9e;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 .mycompainlargetitlt[mycuststylebar="Declined"] {
   background-color: red;
   padding: 5px 8px;
