@@ -11,6 +11,7 @@ import Rates from "./pages/Rates.jsx";
 import HelpCenter from "./pages/HelpCenter.jsx";
 import NewCompaing from "./pages/NewCompaing.jsx";
 import SideBar from "./components/SideBar.jsx";
+import EditCompaing from "./pages/EditCompaing.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/rates" element={<Rates />} />
             <Route path="/helpcenter" element={<HelpCenter />} />
             <Route path="/campaigns/new" element={<NewCompaing />} />
+            <Route path="/campaings/:id" element={<EditCompaing />} />
           </Routes>
         </div>
       </div>

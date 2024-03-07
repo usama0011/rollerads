@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Newcompain.css";
+import "../styles/Edit.css";
 import Header from "../components/Header";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PushIcon from "../assets/pushdark.svg";
 import OnclickIcon from "../assets/onclick.svg";
 import InpageIcon from "../assets/inpage.svg";
@@ -14,10 +14,17 @@ import IPPDark from "../assets/ippdark.svg";
 import Tooltip from "../assets/tooltip.svg";
 import ArrowDownIcon from "../assets/arrowdown.svg";
 import SmielFaceSVG from "../assets/smile.svg";
+import EyeSVG from "../assets/eye.svg";
 
 import AddIcon from "../assets/plus.svg";
-import { FaceSmileIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
-const NewCompaing = () => {
+import {
+  FaceSmileIcon,
+  ChevronDownIcon,
+  ArrowLeftIcon,
+} from "@heroicons/react/24/solid";
+const EditCompaing = () => {
+  const { id } = useParams();
+  console.log(id);
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [showOptions, setShowOptions] = useState(false);
@@ -269,12 +276,15 @@ const NewCompaing = () => {
     setshowCountiresOption((prev) => !prev);
   };
   useEffect(() => {
-    document.title = "New campaing. Campaings . RollerAds";
+    document.title = "ADS CodeFuel Native Campaings . RollerAds";
   }, []);
   return (
     <div className="maincontainer">
       <div className="contentconatiner">
-        <Header routename="Campaigns / New campaing" />
+        <div className="arrrrrrrr">
+    
+          <Header routename={`Campaigns / Edit campaign (${id})`} />
+        </div>
         <div className="sommingConatiner">
           <p className="tagline">
             🔥Smoking hot! Check out a new profitable offer from CpaRoll —{" "}
@@ -294,25 +304,9 @@ const NewCompaing = () => {
               <div className="sectononetop">
                 <h3>Format</h3>
                 <div className="boxesgridonesection">
-                  <div style={{ backgroundColor: "#1b1b1f" }}>
-                    <img src={PushIcon} alt="" />
-
-                    <h4>Push</h4>
-                    <img src={Radiocheck} alt="" />
-                  </div>
                   <div>
                     <img src={OnclickIcon} alt="" />
                     <h4>onclick</h4>
-                    <img src={RadionUncheck} alt="" />
-                  </div>
-                  <div>
-                    <img src={InpageIcon} alt="" />
-                    <h4>In-page</h4>
-                    <img src={RadionUncheck} alt="" />
-                  </div>
-                  <div>
-                    <img src={CalenderIcon} alt="" />
-                    <h4>Calendar</h4>
                     <img src={RadionUncheck} alt="" />
                   </div>
                 </div>
@@ -324,47 +318,15 @@ const NewCompaing = () => {
                 <h3>Bid model</h3>
                 <div className="boxesgridonesection">
                   <div style={{ backgroundColor: "#1b1b1f" }}>
-                    <img src={CPCDarkOne} alt="" />
+                    <img src={EyeSVG} alt="" />
                     <h4>SmartCPC</h4>
                     <img src={Radiocheck} alt="" />
                   </div>
-                  <div>
-                    <img src={CPCDarkTwo} alt="" />
-                    <h4>CPC</h4>
-                    <img src={RadionUncheck} alt="" />
-                  </div>
                 </div>
               </div>
               <div className="sectononebottom"></div>
             </section>
-            <section className="sectionone">
-              <div className="sectononetop">
-                <h3>Format</h3>
-                <div className="boxesgridonesection">
-                  <div style={{ backgroundColor: "#1b1b1f" }}>
-                    <img src={PushIcon} alt="" />
-                    <h4>Push</h4>
-                    <img src={Radiocheck} alt="" />
-                  </div>
-                  <div>
-                    <img src={OnclickIcon} alt="" />
-                    <h4>onclick</h4>
-                    <img src={RadionUncheck} alt="" />
-                  </div>
-                  <div>
-                    <img src={InpageIcon} alt="" />
-                    <h4>In-page</h4>
-                    <img src={RadionUncheck} alt="" />
-                  </div>
-                  <div>
-                    <img src={CalenderIcon} alt="" />
-                    <h4>Calendar</h4>
-                    <img src={RadionUncheck} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="sectononebottom"></div>
-            </section>
+
             <section className="sectionone dropdownselectotoinslist">
               <div
                 className="preseheadercontainer"
@@ -485,111 +447,7 @@ const NewCompaing = () => {
               </div>
             </section>
             {/* Craeteives section start form there   */}
-            <section className="sectionone creativesecton">
-              <h3>Creatives</h3>
-              <div className="createiveheader">
-                <img src={Tooltip} alt="" />
-                <p>
-                  Working with software and utilities? Try auto-generated
-                  creatives! More in the{" "}
-                  <Link
-                    style={{ color: "#3880df" }}
-                    to="https://blog.rollerads.com/2023/10/18/introducing-auto-generated-creatives-for-software-utilities/"
-                  >
-                    blog.
-                  </Link>
-                </p>
-              </div>
-              <div className="genreatebuttonsredion">
-                <div>
-                  <img src={Radiocheck} alt="" />
-                  <p>Manual</p>
-                </div>
-                <div>
-                  <img src={RadionUncheck} alt="" />
-                  <p>Auto-genereated</p>
-                </div>
-              </div>
-              <div className="imagescontainermain">
-                <div>
-                  <p>Icon</p>
-                  <p className="specilstyle">
-                    192 x 192 px jpg.png,webp 2Mb max
-                  </p>
-                </div>
-                <div className="secondcontainerimgads">
-                  <p>Image</p>
-                  <p className="specilstyle">
-                    360 x 240 px jpg.png,webp 2Mb max
-                  </p>
-                </div>
-              </div>
-              <div className="emojitextcontinaer">
-                <div className="facecontainer">
-                  <FaceSmileIcon className="smile" />
-                </div>
-                <div className="inputemoijinut">
-                  <input
-                    className="myinputemoitlte"
-                    type="text"
-                    placeholder="Title"
-                  />
-                </div>
-              </div>
-              <div className="selectedtextcontainer">
-                <div>{`{City}`}</div>
-                <div>{`{Country}`}</div>
-              </div>
-              <div className="emojitextcontinaer">
-                <div className="facecontainer">
-                  <FaceSmileIcon className="smile" />
-                </div>
-                <div className="inputemoijinut">
-                  <input
-                    className="myinputemoitlte"
-                    type="text"
-                    placeholder="Description"
-                  />
-                </div>
-              </div>
-              <div className="selectedtextcontainer">
-                <div>{`{City}`}</div>
-                <div>{`{Country}`}</div>
-              </div>
-            </section>
-            <section className="sectionone ssss">
-              <h3>Preview</h3>
-              <div className="previewbuttonsconainer">
-                <div>
-                  <img src={Radiocheck} alt="" />
-                  <p>Android</p>
-                </div>
-                <div>
-                  <img src={RadionUncheck} alt="" />
-                  <p>Windows</p>
-                </div>
-                <div>
-                  <img src={RadionUncheck} alt="" />
-                  <p>macOS</p>
-                </div>
-              </div>
-              <div className="blackcontainner">
-                <div className="crnnrr">
-                  <img
-                    className="chromimage"
-                    src="https://img.icons8.com/?size=40&id=YqsZIFNpoKuB&format=png"
-                    alt=""
-                  />{" "}
-                  <p className="chrome">Chrome. example.rollerads.com .new</p>
-                </div>
-                <h5>You createive title</h5>
-                <p>You creative description</p>
-              </div>
-              <div className="addcreateubuttons">
-                <img src={AddIcon} alt="" />
-                <p>Add creative</p>
-              </div>
-            </section>
+
             <section className="sectionone countriescontainer">
               <h3>Countries</h3>
               <div className="inputContainer">
@@ -617,111 +475,7 @@ const NewCompaing = () => {
                 </div>
               )}
             </section>
-            <section></section>
-            <section>
-              <div data-v-5b0b46f3="" class="index-bar-item">
-                <div class="card-group">
-                  <div class="card">
-                    <div class="card--full-width">
-                      <h2 class="card__heading card__heading--secondary text-headline-3">
-                        Bidding strategy
-                      </h2>
-                      <div data-v-2fbd1bc8="" class="rangebar">
-                        <input
-                          data-v-2fbd1bc8=""
-                          type="range"
-                          min="0"
-                          max="2"
-                          step="0.1"
-                        />
-                        <div data-v-2fbd1bc8="" class="rangebar__list">
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                        </div>
-                        <div
-                          data-v-2fbd1bc8=""
-                          class="rangebar__legend text-body-3"
-                        >
-                          <span data-v-2fbd1bc8="">Bottom of the auction</span>
-                          <span data-v-2fbd1bc8="">Average auction price</span>
-                          <span data-v-2fbd1bc8="">Top of the auction</span>
-                        </div>
-                      </div>
-                      <div class="notification-global notification--info text-body-3 card__field">
-                        <p class="notification__message">
-                          SmartCPC model is based on actual average rate on
-                          every zone. You can bid more or less than average to
-                          manipulate the volume of clicks. We recommend to start
-                          with the default setting.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">
-                        Limits &amp; Max Bid{" "}
-                      </h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">
-                        Custom bids{" "}
-                      </h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">
-                        CPA optimization{" "}
-                        <i class="card__tooltip v-popper--has-tooltip"></i>
-                      </h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">Budget </h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+
             <section>
               <div data-v-5b0b46f3="" class="index-bar-item">
                 <div class="card-group">
@@ -818,33 +572,12 @@ const NewCompaing = () => {
               <div class="card__head-icon">
                 <h2 class="card__heading text-headline-3">Save changes </h2>
               </div>
-              <div class="checkbox card__checkbox text-body-3">
-                <input
-                  id="accept"
-                  type="checkbox"
-                  name="accept"
-                  class="checkbox__input"
-                />
-                <label for="accept" class="checkbox__label"></label>
-                <label for="accept" class="checkbox__text">
-                  <span>
-                    {" "}
-                    I declare and guarantee that my campaign meets the{" "}
-                    <a
-                      style={{ color: "#1b79db" }}
-                      href="/guidelines"
-                      target="_blank"
-                    >
-                      Quality Guidelines
-                    </a>
-                  </span>
-                </label>
-              </div>
+              <div class="checkbox card__checkbox text-body-3"></div>
               <button
                 class="cta text-button cta--img cta--launch card__cta"
                 disabled=""
               >
-                Start campaign
+                Save Changes
               </button>
             </section>
           </div>
@@ -901,4 +634,4 @@ const NewCompaing = () => {
   );
 };
 
-export default NewCompaing;
+export default EditCompaing;

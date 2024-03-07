@@ -17,8 +17,10 @@ import {
   ChevronDoubleRightIcon,
   CheckIcon,
 } from "@heroicons/react/24/solid";
+import { Link, useNavigate } from "react-router-dom";
 
 const CompainContainer = () => {
+ const navigate = useNavigate()
   const campaignsData = [
     {
       id: 659465,
@@ -389,7 +391,9 @@ const CompainContainer = () => {
     { value: "SmartCPC", label: "SmartCPC" },
     { value: "SmartCPM", label: "SmartCPM" },
   ];
-
+  const EditcomapinPage = (id) => {
+    navigate("/rates")
+  };
   const handleToggleOptions = (dropdown) => {
     setDropdownState((prevState) => ({
       ...prevState,
@@ -539,12 +543,7 @@ const CompainContainer = () => {
                   </label>
                 </td>
                 <td>
-                  <input
-                    type=""
-                    className="seasrchid"
-                    placeholder="ID"
-                  
-                  />
+                  <input type="" className="seasrchid" placeholder="ID" />
                 </td>
                 <td>
                   <input
@@ -720,7 +719,12 @@ const CompainContainer = () => {
                       <div className="controlscotnaienr">
                         <PlayIcon className="oio" />
                         <PauseIcon className="oio" />
-                        <PencilIcon className="oio" />
+                        <Link
+                          style={{ color: "unset" }}
+                          to={`/campaings/${campaign.id}`}
+                        >
+                          <PencilIcon className="oio" />
+                        </Link>
                         <PlusCircleIcon className="oio" />
                         <ChartBarSquareIcon className="oio" />
                       </div>

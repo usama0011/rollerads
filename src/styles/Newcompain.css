@@ -17,7 +17,7 @@
 }
 .sectionrightonebeyong {
   width: 30%;
-  border: 0.5px solid rgb(139, 139, 139);;
+  border: 0.5px solid rgb(139, 139, 139);
   height: 500px;
   border-radius: 5px;
   position: sticky;
@@ -586,4 +586,99 @@
   border-radius: 5px;
   border: 1px solid rgb(139, 139, 139);
   font-size: 14px;
+}
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 8px;
+  padding: 18px 16px 20px;
+  margin: 24px auto 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: -webkit-max-content;
+  height: max-content;
+}
+.countriescontainer {
+  position: relative;
+}
+.ddsfd {
+  position: absolute;
+  top: 100px;
+}
+.arrowdown {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #e4e1e6;
+}
+.table-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.card__head-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.text-headline-3 {
+  font-size: 16px;
+}
+.mycustomddcard {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+}
+.mycustomddcard > div {
+  margin: 10px 0px;
+}
+.card__cta {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #e4e1e6;
+  border: 1px solid #e4e1e6;
+  margin-top: 20px;
+}
+
+.notification__message {
+  padding: 10px;
+  background-color: #2b2c35;
+  color: #e4e1e6;
+  font-size: 14px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+.rangebar[data-v-2fbd1bc8] {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.rangebar input[data-v-2fbd1bc8] {
+  z-index: 1;
+  align-items: center;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  min-height: 22px;
+  overflow: hidden;
+  max-width: 626px;
+  color: #e4e1e6;
+  position: relative;
 }
