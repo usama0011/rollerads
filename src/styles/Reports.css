@@ -330,7 +330,7 @@ input:checked + .slider:before {
 /* Style for the selected date */
 .calendar-table .active {
   background-color: #2b2c35;
-  color: #fff;
+  color: rgb(186, 195, 255);
   border-radius: 5px;
 }
 

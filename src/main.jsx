@@ -12,29 +12,13 @@ import HelpCenter from "./pages/HelpCenter.jsx";
 import NewCompaing from "./pages/NewCompaing.jsx";
 import SideBar from "./components/SideBar.jsx";
 import EditCompaing from "./pages/EditCompaing.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
+import InitializeApp from "./InitializeApp.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="main-container">
-        <div className="sidebar">
-          <SideBar />
-        </div>
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/campaigns" element={<App />} />
-            <Route path="/reports" element={<Reprots />} />
-            <Route path="/tracking" element={<Tracking />} />
-            <Route path="/finance" element={<Finance />} />
-            <Route path="/creatives" element={<Creatives />} />
-            <Route path="/rates" element={<Rates />} />
-            <Route path="/helpcenter" element={<HelpCenter />} />
-            <Route path="/campaigns/new" element={<NewCompaing />} />
-            <Route path="/campaings/:id" element={<EditCompaing />} />
-          </Routes>
-        </div>
-      </div>
+      <InitializeApp />
     </BrowserRouter>
   </React.StrictMode>
 );

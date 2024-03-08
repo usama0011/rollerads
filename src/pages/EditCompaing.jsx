@@ -25,13 +25,17 @@ import {
 const EditCompaing = () => {
   const { id } = useParams();
   const [showDropdown, setShowDropdown] = useState(false);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState(
+    id == 659465 || id == 923765 ? "US | Mobile | ecommerce" : ""
+  );
   const [showOptions, setShowOptions] = useState(false);
   const [showCountiresOption, setshowCountiresOption] = useState(false);
   const [campaignName, setCampaignName] = useState("");
   const [targetURL, setTargetURL] = useState("");
   const [targetInputValue, setTargetInputValue] = useState("");
-  const [trafficPresetsInputValue, setTrafficPresetsInputValue] = useState("");
+  const [trafficPresetsInputValue, setTrafficPresetsInputValue] = useState(
+    id == 659465 ? "S1 Solar New" : id == 923765 ? "S1 Bathroom IN" : ""
+  );
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("");
   const [countries, setCountries] = useState([
@@ -242,11 +246,11 @@ const EditCompaing = () => {
   };
   useEffect(() => {
     if (id == 923765) {
-      setTargetInputValue('https://www.mdl02isk.com/4RQSJ/2BGSTD/')
-    } else if(id == 659465) {
-      setTargetInputValue('https://www.mdl02isk.com/4RQSJ/26B6MK/')
+      setTargetInputValue("https://www.mdl02isk.com/4RQSJ/2BGSTD/");
+    } else if (id == 659465) {
+      setTargetInputValue("https://www.mdl02isk.com/4RQSJ/26B6MK/");
     }
-  }, [])
+  }, []);
   const handleTagClick = (tag) => {
     setSelectedTags((prevTags) => [...prevTags, tag]);
     setTargetInputValue((prevValue) => prevValue + " " + tag);
@@ -287,7 +291,6 @@ const EditCompaing = () => {
     <div className="maincontainer">
       <div className="contentconatiner">
         <div className="arrrrrrrr">
-
           <Header routename={`Campaigns / Edit campaign (${id})`} />
         </div>
         <div className="sommingConatiner">
@@ -439,8 +442,9 @@ const EditCompaing = () => {
                   ].map((tag, index) => (
                     <div
                       key={index}
-                      className={`tag ${selectedTags.includes(tag) ? "selected" : ""
-                        }`}
+                      className={`tag ${
+                        selectedTags.includes(tag) ? "selected" : ""
+                      }`}
                       onClick={() => handleTagClick(tag)}
                     >
                       {tag}
