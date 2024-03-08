@@ -24,7 +24,6 @@ import {
 } from "@heroicons/react/24/solid";
 const EditCompaing = () => {
   const { id } = useParams();
-  console.log(id);
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [showOptions, setShowOptions] = useState(false);
@@ -241,7 +240,13 @@ const EditCompaing = () => {
       e.target.value = "";
     }
   };
-
+  useEffect(() => {
+    if (id == 923765) {
+      setTargetInputValue('https://www.mdl02isk.com/4RQSJ/2BGSTD/')
+    } else if(id == 659465) {
+      setTargetInputValue('https://www.mdl02isk.com/4RQSJ/26B6MK/')
+    }
+  }, [])
   const handleTagClick = (tag) => {
     setSelectedTags((prevTags) => [...prevTags, tag]);
     setTargetInputValue((prevValue) => prevValue + " " + tag);
@@ -282,7 +287,7 @@ const EditCompaing = () => {
     <div className="maincontainer">
       <div className="contentconatiner">
         <div className="arrrrrrrr">
-    
+
           <Header routename={`Campaigns / Edit campaign (${id})`} />
         </div>
         <div className="sommingConatiner">
@@ -434,9 +439,8 @@ const EditCompaing = () => {
                   ].map((tag, index) => (
                     <div
                       key={index}
-                      className={`tag ${
-                        selectedTags.includes(tag) ? "selected" : ""
-                      }`}
+                      className={`tag ${selectedTags.includes(tag) ? "selected" : ""
+                        }`}
                       onClick={() => handleTagClick(tag)}
                     >
                       {tag}

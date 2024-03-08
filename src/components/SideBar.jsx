@@ -38,11 +38,12 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                border: isActive ? "2px solid #bac3ff" : "",
               };
             }}
           >
-            <PlusIcon className="plussss" />
-            <p>New Campaing</p>
+            <PlusIcon className="plussss" />New Campaing
+            {/* <p>New Campaing</p> */}
           </NavLink>
         </div>
         <br />
@@ -54,11 +55,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
           >
             <MegaphoneIcon className="plusss" />
-            <p>Campaings</p>
+            Campaings
+            {/* <p>Campaings</p> */}
           </NavLink>
         </div>
         <div className="rr">
@@ -67,12 +70,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
             to="/reports"
           >
-            <ArrowTrendingUpIcon className="plusss" />
-            <p>Reports</p>
+            <ArrowTrendingUpIcon className="plusss" />Reports
+            {/* <p>Reports</p> */}
           </NavLink>
         </div>
         <div className="rr">
@@ -81,12 +85,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
             to="/tracking"
           >
-            <GlobeAsiaAustraliaIcon className="plusss" />
-            <p>Tracking</p>
+            <GlobeAsiaAustraliaIcon className="plusss" />Tracking
+            {/* <p>Tracking</p> */}
           </NavLink>
         </div>
         <div className="rr">
@@ -95,12 +100,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
             to="/finance"
           >
-            <CurrencyDollarIcon className="plusss" />
-            <p>Finance</p>
+            <CurrencyDollarIcon className="plusss" />Finance
+            {/* <p>Finance</p> */}
           </NavLink>
         </div>
         <div className="rr">
@@ -109,12 +115,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
             to="/creatives"
           >
-            <PhotoIcon className="plusss" />
-            <p>Creatives</p>
+            <PhotoIcon className="plusss" />Creatives
+            {/* <p>Creatives</p> */}
           </NavLink>
         </div>
         <div className="rr">
@@ -123,12 +130,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
             to="/rates"
           >
-            <NewspaperIcon className="plusss" />
-            <p>Rates</p>
+            <NewspaperIcon className="plusss" />Rates
+            {/* <p>Rates</p> */}
           </NavLink>
         </div>
         <div className="rr">
@@ -137,12 +145,13 @@ const SideBar = () => {
             style={({ isActive, isPending, isTransitioning }) => {
               return {
                 backgroundColor: isActive ? "#2b2c35" : "",
+                color: isActive ? "#bac3ff" : "",
               };
             }}
             to="/helpcenter"
           >
-            <QuestionMarkCircleIcon className="plusss" />
-            <p>Help Center</p>
+            <QuestionMarkCircleIcon className="plusss" />Help Center
+            {/* <p>Help Center</p> */}
           </NavLink>
         </div>
       </div>

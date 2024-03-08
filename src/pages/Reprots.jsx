@@ -1165,12 +1165,29 @@ const Reprots = () => {
     "Zimbabwe",
   ]);
   const [compainsnames, setcompainsnames] = useState([
+    "S1 Solar New",
+    "S1 Roofing 1",
+    "S1 kitchen 2",
+    "S1 Bathroom IN",
+    "S1 medicare low end",
+    "S1 mortgage T1",
+    "UNB Solar DR",
+    "UNB Roofing DR",
+    "UNB Bathroom XR",
+    "UNB KIT DR",
+    "ADS SO 1",
+    "ADS 2 Insurance PP",
+    "ADS 3 New Solar",
+    "Test ADS Home RR",
+    "Test S1 Old AFD",
+    "Test Native",
     "S1",
     "UNB",
     "ADS",
     "Test ads",
     "Test native",
   ]);
+
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [filteredDatadates, setFilteredDatadates] = useState([]);
@@ -1185,12 +1202,12 @@ const Reprots = () => {
   const [selectedReport, setSelectedReport] = useState("");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [showCountries, setShowCountries] = useState(false);
-  const [selectedDate, setSelectedDate] = useState("2024-03-04");
+  const [selectedDate, setSelectedDate] = useState("2024-02-15 / 2024-02-28");
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [filteredData, setFilteredData] = useState(excelData);
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(25);
-  const [selectcomapinname, setselectcomainname] = useState(25);
+  const [selectcomapinname, setselectcomainname] = useState(null);
   const [selectsub, setSub] = useState("");
   const handleDateRangeSelect = (start, end) => {
     setStartDate(start);
@@ -1244,6 +1261,7 @@ const Reprots = () => {
     "Chrome OS",
     "Others",
   ]);
+  // const [currentRows, setCurrentRows] = useState([]);
   // Function to convert the Excel data to an array of report objects
   function createReportArray(data) {
     const reportArray = [];
@@ -1333,9 +1351,13 @@ const Reprots = () => {
   const totalPages = Math.ceil(reports.length / rowsPerPage);
   const indexOfLastRow = currentPage * rowsPerPage;
   const indexOfFirstRow = indexOfLastRow - rowsPerPage;
-  const currentRows = reports.slice(indexOfFirstRow, indexOfLastRow);
+  let currentRows = reports.slice(indexOfFirstRow, indexOfLastRow);
   const filteredRows = filterDataByDateRange(currentRows);
-
+  if (selectcomapinname) {
+    currentRows = currentRows.filter((item) =>
+      item["Campaign"].includes(selectcomapinname)
+    );
+  }
   // Handle page change
   const handlePageChange = (pageNumber) => {
     if (pageNumber < 1 || pageNumber > totalPages) return;
@@ -1431,7 +1453,7 @@ const Reprots = () => {
                                 <span></span>
                               </th>
                               <th colspan="5" class="month">
-                                Mar 2024
+                                Feb 2024
                               </th>
                               <th></th>
                             </tr>
@@ -1477,7 +1499,7 @@ const Reprots = () => {
                                 5
                               </td>
                               <td
-                                class="today active start-date active end-date available"
+                                class="today start-date end-date available"
                                 data-title="r1c2"
                               >
                                 6
@@ -1514,62 +1536,62 @@ const Reprots = () => {
                               <td class="off disabled" data-title="r2c3">
                                 14
                               </td>
-                              <td class="off disabled" data-title="r2c4">
+                              <td class="off disabled active" data-title="r2c4">
                                 15
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend off disabled active"
                                 data-title="r2c5"
                               >
                                 16
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend off disabled active"
                                 data-title="r2c6"
                               >
                                 17
                               </td>
                             </tr>
                             <tr>
-                              <td class="off disabled" data-title="r3c0">
+                              <td class="off disabled active" data-title="r3c0">
                                 18
                               </td>
-                              <td class="off disabled" data-title="r3c1">
+                              <td class="off disabled active" data-title="r3c1">
                                 19
                               </td>
-                              <td class="off disabled" data-title="r3c2">
+                              <td class="off disabled active" data-title="r3c2">
                                 20
                               </td>
-                              <td class="off disabled" data-title="r3c3">
+                              <td class="off disabled active" data-title="r3c3">
                                 21
                               </td>
-                              <td class="off disabled" data-title="r3c4">
+                              <td class="off disabled active" data-title="r3c4">
                                 22
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend off disabled active"
                                 data-title="r3c5"
                               >
                                 23
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend off disabled active"
                                 data-title="r3c6"
                               >
                                 24
                               </td>
                             </tr>
                             <tr>
-                              <td class="off disabled" data-title="r4c0">
+                              <td class="off disabled active" data-title="r4c0">
                                 25
                               </td>
-                              <td class="off disabled" data-title="r4c1">
+                              <td class="off disabled active" data-title="r4c1">
                                 26
                               </td>
-                              <td class="off disabled" data-title="r4c2">
+                              <td class="off disabled active" data-title="r4c2">
                                 27
                               </td>
-                              <td class="off disabled" data-title="r4c3">
+                              <td class="off disabled active" data-title="r4c3">
                                 28
                               </td>
                               <td class="off disabled" data-title="r4c4">
@@ -1645,7 +1667,7 @@ const Reprots = () => {
                                 <span></span>
                               </th>
                               <th colspan="5" class="month">
-                                Apr 2024
+                                March 2024
                               </th>
                               <th></th>
                             </tr>
@@ -1919,6 +1941,9 @@ const Reprots = () => {
                 onClick={handletogglecompaincontainer}
               />
             </div>
+            {/* <svg xmlns="http://www.w3.org/2000/svg" width={10} height={10} style={{ position: 'relative', fill: '#4b474e', left: '-29px' }} onClick={() => setselectcomainname(null)}>
+              <path d="M6.895455 5l2.842897-2.842898c.348864-.348863.348864-.914488 0-1.263636L9.106534.261648c-.348864-.348864-.914489-.348864-1.263636 0L5 3.104545 2.157102.261648c-.348863-.348864-.914488-.348864-1.263636 0L.261648.893466c-.348864.348864-.348864.914489 0 1.263636L3.104545 5 .261648 7.842898c-.348864.348863-.348864.914488 0 1.263636l.631818.631818c.348864.348864.914773.348864 1.263636 0L5 6.895455l2.842898 2.842897c.348863.348864.914772.348864 1.263636 0l.631818-.631818c.348864-.348864.348864-.914489 0-1.263636L6.895455 5z" />
+            </svg> */}
             {showCompaingsnames && (
               <div className="optionsContainer">
                 {compainsnames.map((item, i) => (
@@ -2116,6 +2141,42 @@ const Reprots = () => {
                   <td>{report["CPA"]}</td>
                 </tr>
               ))}
+              <tr className="on">
+                <td>Total</td>
+                <td> </td>
+                <td>
+                  {currentRows.reduce((sum, item) => sum + item.Impressions, 0)}
+                </td>
+                <td>
+                  {currentRows.reduce((sum, item) => sum + item.Clicks, 0)}
+                </td>
+                <td style={{ textAlign: "left" }}>
+                  {currentRows.reduce((sum, item) => sum + item.Conversion, 0)}
+                </td>
+                <td>{"-"}</td>
+                <td>
+                  $
+                  {currentRows
+                    .reduce((sum, item) => sum + item.Cost, 0)
+                    .toFixed(2)}
+                </td>
+                <td>
+                  {currentRows
+                    .reduce((sum, item) => sum + item.CPC, 0)
+                    .toFixed(3)}
+                </td>
+                <td>
+                  {currentRows
+                    .reduce((sum, item) => sum + item.CPM, 0)
+                    .toFixed(3)}
+                </td>
+                <td>
+                  {currentRows
+                    .reduce((sum, item) => sum + item.CTR, 0)
+                    .toFixed(3)}
+                </td>
+                <td>{"-"}</td>
+              </tr>
             </tbody>
             <footer className="tablefooter"></footer>
           </table>

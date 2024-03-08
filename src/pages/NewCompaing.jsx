@@ -337,7 +337,7 @@ const NewCompaing = () => {
               </div>
               <div className="sectononebottom"></div>
             </section>
-            <section className="sectionone">
+            {/* <section className="sectionone">
               <div className="sectononetop">
                 <h3>Format</h3>
                 <div className="boxesgridonesection">
@@ -364,7 +364,7 @@ const NewCompaing = () => {
                 </div>
               </div>
               <div className="sectononebottom"></div>
-            </section>
+            </section> */}
             <section className="sectionone dropdownselectotoinslist">
               <div
                 className="preseheadercontainer"
@@ -563,6 +563,10 @@ const NewCompaing = () => {
                 <div>
                   <img src={Radiocheck} alt="" />
                   <p>Android</p>
+                </div>
+                <div>
+                  <img src={RadionUncheck} alt="" />
+                  <p>Ios</p>
                 </div>
                 <div>
                   <img src={RadionUncheck} alt="" />

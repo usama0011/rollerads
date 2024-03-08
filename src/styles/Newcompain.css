@@ -402,17 +402,21 @@
   margin-right: 10px;
 }
 .previewbuttonsconainer > div:first-child {
-  border: 0.5px solid rgb(139, 139, 139);
+  border: 1px solid #bac3ff;
 }
 .previewbuttonsconainer > div > p {
   margin-left: 10px;
-  color: #e4e1e6;
+  /* color: #e4e1e6; */
+  /* margin-bottom: 0px !important; */
 }
 .previewbuttonsconainer > div:nth-child(2) {
   background-color: #23232b;
 }
 
 .previewbuttonsconainer > div:nth-child(3) {
+  background-color: #23232b;
+}
+.previewbuttonsconainer > div:nth-child(4) {
   background-color: #23232b;
 }
 .blackcontainner {

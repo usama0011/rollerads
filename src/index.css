@@ -13,6 +13,7 @@ body {
 .main-container {
   display: flex;
   position: relative;
+  background-color: #2b2c35;
 }
 
 .sidebar {
