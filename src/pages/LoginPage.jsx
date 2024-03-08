@@ -3,7 +3,7 @@ import wallSVG from "../assets/wall.svg";
 import Tab from "../components/Tabs";
 const LoginPage = ({ setIsLogedIn }) => {
   const [activeTab, setActiveTab] = useState("Login");
-  const [email, setEmail] = useState("farmvillekings@gmail.com");
+  const [email, setEmail] = useState("ads@clicksconnections.com");
   const [password, setPassword] = useState("123456");
 
   const handleInputFocus = (e) => {
