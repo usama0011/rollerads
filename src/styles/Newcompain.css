@@ -676,6 +676,7 @@
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
+  background-color: red;
   background: none;
   cursor: pointer;
   display: flex;
@@ -700,4 +701,9 @@
 .ruos {
   max-width: 97%;
   margin-left: 12px;
+}
+.myiiiiiii {
+  border-bottom: 1px solid #e4e1e6;
+  margin-bottom: 10px;
+  
 }

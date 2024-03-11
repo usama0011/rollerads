@@ -650,36 +650,7 @@ const NewCompaing = () => {
                         Bidding strategy
                       </h2>
                       <div data-v-2fbd1bc8="" class="rangebar">
-                        <input
-                          data-v-2fbd1bc8=""
-                          type="range"
-                          min="0"
-                          max="2"
-                          step="0.1"
-                        />
-                        <div data-v-2fbd1bc8="" class="rangebar__list">
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                          <span data-v-2fbd1bc8=""></span>
-                        </div>
+                      <input type="range"/>
                         <div
                           data-v-2fbd1bc8=""
                           class="rangebar__legend text-body-3"
