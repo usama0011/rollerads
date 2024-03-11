@@ -1165,10 +1165,10 @@ const Reprots = () => {
     "Zimbabwe",
   ]);
   const [compainsnames, setcompainsnames] = useState([
-    "S1 Solar New",
+    "Ads Solar New",
     "S1 Roofing 1",
     "S1 Kitchen 2",
-    "S1 Bathroom IN",
+    "Ads Roofing 1",
     "S1 medical low end",
     "S1 Mortgage T1",
     "UNB Solar DR",
@@ -1202,7 +1202,7 @@ const Reprots = () => {
   const [selectedReport, setSelectedReport] = useState("");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [showCountries, setShowCountries] = useState(false);
-  const [selectedDate, setSelectedDate] = useState("2024-02-15 / 2024-02-28");
+  const [selectedDate, setSelectedDate] = useState("2024-02-01 / 2024-03-10");
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [filteredData, setFilteredData] = useState(excelData);
   const [currentPage, setCurrentPage] = useState(1);

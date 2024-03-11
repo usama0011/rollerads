@@ -36,7 +36,7 @@
 .balanceContainer {
   display: flex;
   align-items: center;
-  border: 1px solid rgb(139, 139, 139);;
+  border: 1px solid rgb(139, 139, 139);
   border-radius: 5px;
   padding: 8px 12px;
 }

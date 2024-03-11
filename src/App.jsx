@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import CompainContainer from "./components/compainsContainer";
 import { Link } from "react-router-dom";
 const App = () => {
+  useEffect(() => {
+    document.title = "Rates . RollerAds";
+  }, []);
   return (
     <div className="maincontainer">
       <div className="contentconatiner">
