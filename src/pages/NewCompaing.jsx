@@ -566,10 +566,6 @@ const NewCompaing = () => {
                 </div>
                 <div>
                   <img src={RadionUncheck} alt="" />
-                  <p>Ios</p>
-                </div>
-                <div>
-                  <img src={RadionUncheck} alt="" />
                   <p>Windows</p>
                 </div>
                 <div>

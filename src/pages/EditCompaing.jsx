@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import { Link, useParams } from "react-router-dom";
 import PushIcon from "../assets/pushdark.svg";
 import OnclickIcon from "../assets/onclick.svg";
-import InpageIcon from "../assets/inpage.svg";
 import CalenderIcon from "../assets/calender.svg";
 import Radiocheck from "../assets/radiocheck.svg";
 import RadionUncheck from "../assets/radiouncheck.svg";
@@ -15,7 +14,7 @@ import Tooltip from "../assets/tooltip.svg";
 import ArrowDownIcon from "../assets/arrowdown.svg";
 import SmielFaceSVG from "../assets/smile.svg";
 import EyeSVG from "../assets/eye.svg";
-
+import InpageIcon from "../assets/inpage.svg";
 import AddIcon from "../assets/plus.svg";
 import {
   FaceSmileIcon,
@@ -31,13 +30,17 @@ const EditCompaing = () => {
   const [showOptions, setShowOptions] = useState(false);
   const [showCountiresOption, setshowCountiresOption] = useState(false);
   const [campaignName, setCampaignName] = useState("");
+  const [operatingSystem, setOperatingStystem] = useState("Android | iOS");
   const [targetURL, setTargetURL] = useState("");
   const [targetInputValue, setTargetInputValue] = useState("");
   const [trafficPresetsInputValue, setTrafficPresetsInputValue] = useState(
-    id == 659465 ? "S1 Solar New" : id == 923765 ? "S1 Bathroom IN" : ""
+    id == 659465 ? "Ads Solar New" : id == 923765 ? "Ads Roofing 1" : ""
   );
   const [selectedTags, setSelectedTags] = useState([]);
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState(
+    "United State of America"
+  );
+  const [Devices, setDevices] = useState("Mobile");
   const [countries, setCountries] = useState([
     "Afghanistan",
     "Albania",
@@ -246,9 +249,9 @@ const EditCompaing = () => {
   };
   useEffect(() => {
     if (id == 923765) {
-      setTargetInputValue("https://www.mdl02isk.com/4RQSJ/2BGSTD/");
+      setTargetInputValue("https://www.mdl02isk.com/63CFP/2LS592/");
     } else if (id == 659465) {
-      setTargetInputValue("https://www.mdl02isk.com/4RQSJ/26B6MK/");
+      setTargetInputValue("https://www.mdl02isk.com/63CFP/2N721M/");
     }
   }, []);
   const handleTagClick = (tag) => {
@@ -313,8 +316,8 @@ const EditCompaing = () => {
                 <h3>Format</h3>
                 <div className="boxesgridonesection">
                   <div>
-                    <img src={OnclickIcon} alt="" />
-                    <h4>onclick</h4>
+                    <img src={InpageIcon} alt="" />
+                    <h4>Inpage</h4>
                     <img src={RadionUncheck} alt="" />
                   </div>
                 </div>
@@ -549,30 +552,32 @@ const EditCompaing = () => {
                 </div>
               </div>
             </section>
-            <section>
-              <div data-v-5b0b46f3="" class="index-bar-item">
-                <div class="card-group" ad-format="1">
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">Device</h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">
-                        Operating systems
-                      </h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+            <section className="sectionone countriescontainer">
+              <h3>Device</h3>
+              <div className="inputContainer">
+                <input
+                  type="text"
+                  value={Devices}
+                  onChange={(e) => setDevices(e.target.value)}
+                  placeholder="Select a Device"
+                  className="custominput"
+                  readOnly
+                />
+                <span className="requiredText">Required</span>
+              </div>
+            </section>
+            <section className="sectionone countriescontainer">
+              <h3>Operrating System</h3>
+              <div className="inputContainer">
+                <input
+                  type="text"
+                  value={operatingSystem}
+                  onChange={(e) => setOperatingStystem(e.target.value)}
+                  placeholder="Select a Operating System"
+                  className="custominput"
+                  readOnly
+                />
+                <span className="requiredText">Required</span>
               </div>
             </section>
 

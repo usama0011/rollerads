@@ -115,7 +115,18 @@ const Reprots = () => {
       "---",
       "11-02-24",
     ],
-    ["567890", "Ads Roofing 1", "11,871", 617, 0, "---", 98.72, 0.16, 8.31, 5.2],
+    [
+      "567890",
+      "Ads Roofing 1",
+      "11,871",
+      617,
+      0,
+      "---",
+      98.72,
+      0.16,
+      8.31,
+      5.2,
+    ],
     [
       "234567",
       "Ads Roofing 1",
@@ -1155,11 +1166,11 @@ const Reprots = () => {
   ]);
   const [compainsnames, setcompainsnames] = useState([
     "Ads Solar New",
-    "S1 Roofing 1",
-    "S1 Kitchen 2",
+    "T Home 1",
+    "To Kitchen 2",
     "Ads Roofing 1",
-    "S1 medical low end",
-    "S1 Mortgage T1",
+    "Medical low end",
+    "T Mortgage T1",
     "UNB Solar DR",
     "UNB Roofing DR",
     "UNB Bathroom XR",
@@ -1167,13 +1178,12 @@ const Reprots = () => {
     "ADS SO 1",
     "ADS 2 Insurance PP",
     "ADS 3 New Solar",
-    "Test ADS Home RR",
-    "Test S1 Old AFD",
+    "Test Home RR",
+    "Test Old AFD",
     "Test Native",
-    "S1",
     "UNB",
-    "ADS",
-    "Test ads",
+    "SD",
+    "Test sd",
     "Test native",
   ]);
 
@@ -1191,7 +1201,7 @@ const Reprots = () => {
   const [selectedReport, setSelectedReport] = useState("");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [showCountries, setShowCountries] = useState(false);
-  const [selectedDate, setSelectedDate] = useState("2024-02-01 / 2024-03-10");
+  const [selectedDate, setSelectedDate] = useState("2024-02-01 / 2024-03-12");
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [filteredData, setFilteredData] = useState(excelData);
   const [currentPage, setCurrentPage] = useState(1);
@@ -1470,59 +1480,65 @@ const Reprots = () => {
                               <td class="off ends available" data-title="r0c3">
                                 29
                               </td>
-                              <td class="available" data-title="r0c4">
+                              <td class="available active" data-title="r0c4">
                                 1
                               </td>
-                              <td class="weekend available" data-title="r0c5">
+                              <td
+                                class="weekend available active "
+                                data-title="r0c5"
+                              >
                                 2
                               </td>
-                              <td class="weekend available" data-title="r0c6">
+                              <td
+                                class="weekend available active"
+                                data-title="r0c6"
+                              >
                                 3
                               </td>
                             </tr>
                             <tr>
-                              <td class="available" data-title="r1c0">
+                              <td class="available active" data-title="r1c0">
                                 4
                               </td>
-                              <td class="available" data-title="r1c1">
+                              <td class="available active" data-title="r1c1">
                                 5
                               </td>
                               <td
-                                class="today start-date end-date available"
+                                class="today active start-date end-date available"
                                 data-title="r1c2"
                               >
                                 6
                               </td>
-                              <td class="off disabled" data-title="r1c3">
+                              <td class="off active disabled" data-title="r1c3">
                                 7
                               </td>
-                              <td class="off disabled" data-title="r1c4">
+                              <td class="off active disabled" data-title="r1c4">
                                 8
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend active off disabled"
                                 data-title="r1c5"
                               >
                                 9
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend active off disabled"
                                 data-title="r1c6"
                               >
                                 10
                               </td>
                             </tr>
                             <tr>
-                              <td class="off disabled" data-title="r2c0">
+                              <td class="off active disabled" data-title="r2c0">
                                 11
                               </td>
-                              <td class="off disabled" data-title="r2c1">
+                              <td class="off active disabled" data-title="r2c1">
                                 12
                               </td>
-                              <td class="off disabled" data-title="r2c2">
+                              <td class="off active disabled" data-title="r2c2">
                                 13
                               </td>
-                              <td class="off disabled" data-title="r2c3">
+                              <td class="off active disabled" data-title="r2c3">
                                 14
                               </td>
                               <td class="off disabled active" data-title="r2c4">
@@ -1583,20 +1599,8 @@ const Reprots = () => {
                               <td class="off disabled active" data-title="r4c3">
                                 28
                               </td>
-                              <td class="off disabled" data-title="r4c4">
+                              <td class="off disabled active" data-title="r4c4">
                                 29
-                              </td>
-                              <td
-                                class="weekend off disabled"
-                                data-title="r4c5"
-                              >
-                                30
-                              </td>
-                              <td
-                                class="weekend off disabled"
-                                data-title="r4c6"
-                              >
-                                31
                               </td>
                             </tr>
                             <tr>
@@ -1716,48 +1720,48 @@ const Reprots = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="off disabled" data-title="r1c0">
+                              <td class="off active disabled" data-title="r1c0">
                                 1
                               </td>
-                              <td class="off disabled" data-title="r1c1">
+                              <td class="off active disabled" data-title="r1c1">
                                 2
                               </td>
-                              <td class="off disabled" data-title="r1c2">
+                              <td class="off active disabled" data-title="r1c2">
                                 3
                               </td>
-                              <td class="off disabled" data-title="r1c3">
+                              <td class="off active disabled" data-title="r1c3">
                                 4
                               </td>
-                              <td class="off disabled" data-title="r1c4">
+                              <td class="off active disabled" data-title="r1c4">
                                 5
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend off active disabled"
                                 data-title="r1c5"
                               >
                                 6
                               </td>
                               <td
-                                class="weekend off disabled"
+                                class="weekend off active disabled"
                                 data-title="r1c6"
                               >
                                 7
                               </td>
                             </tr>
                             <tr>
-                              <td class="off disabled" data-title="r2c0">
+                              <td class="off active disabled" data-title="r2c0">
                                 8
                               </td>
-                              <td class="off disabled" data-title="r2c1">
+                              <td class="off active disabled" data-title="r2c1">
                                 9
                               </td>
-                              <td class="off disabled" data-title="r2c2">
+                              <td class="off active disabled" data-title="r2c2">
                                 10
                               </td>
-                              <td class="off disabled" data-title="r2c3">
+                              <td class="off active disabled" data-title="r2c3">
                                 11
                               </td>
-                              <td class="off disabled" data-title="r2c4">
+                              <td class="off active disabled" data-title="r2c4">
                                 12
                               </td>
                               <td
