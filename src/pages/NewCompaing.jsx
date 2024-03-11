@@ -16,17 +16,32 @@ import ArrowDownIcon from "../assets/arrowdown.svg";
 import SmielFaceSVG from "../assets/smile.svg";
 
 import AddIcon from "../assets/plus.svg";
-import { FaceSmileIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
+import {
+  FaceSmileIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from "@heroicons/react/24/solid";
 const NewCompaing = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [showOptions, setShowOptions] = useState(false);
   const [showCountiresOption, setshowCountiresOption] = useState(false);
   const [campaignName, setCampaignName] = useState("");
+  const [showplateforms, setShowPlateforms] = useState(false);
+  const [showplateformss, setShowPlateformss] = useState(false);
   const [targetURL, setTargetURL] = useState("");
   const [targetInputValue, setTargetInputValue] = useState("");
   const [trafficPresetsInputValue, setTrafficPresetsInputValue] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenn, setIsOpenn] = useState(false);
+  const [Devices, setDevices] = useState("");
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+  const toggleDropdownn = () => {
+    setIsOpenn(!isOpenn);
+  };
   const [selectedCountry, setSelectedCountry] = useState("");
   const [countries, setCountries] = useState([
     "Afghanistan",
@@ -271,6 +286,14 @@ const NewCompaing = () => {
   useEffect(() => {
     document.title = "New campaing. Campaings . RollerAds";
   }, []);
+  const handltooglenewOptionnew = () => {
+    setShowPlateforms(!showplateforms);
+  };
+  const handltooglenewOptionneww=()=>{
+    setShowPlateformss(!showplateformss);
+  }
+  const myplatorms = ["Windows", "MacOS", "Android", "iOS", "Chrome", "OS"];
+  const MycustomDevices = ["Moble", "Tablet", "Desktop"];
   return (
     <div className="maincontainer">
       <div className="contentconatiner">
@@ -788,27 +811,82 @@ const NewCompaing = () => {
               </div>
             </section>
             <section>
-              <div data-v-5b0b46f3="" class="index-bar-item">
-                <div class="card-group" ad-format="1">
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">Device</h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
+              <div className="index-bar-item">
+                <div className="card-group" ad-format="1">
+                  <div className="card card--collapsed">
+                    <div className="card__head-icon" onClick={toggleDropdownn}>
+                      <h2 className="card__heading text-headline-3">Device</h2>
+                      <button className="table-button table-button--open table-button--heading-icon">
+                        {isOpenn ? (
+                          <ChevronUpIcon className="arrowup" />
+                        ) : (
+                          <ChevronDownIcon className="arrowdown" />
+                        )}
                       </button>
                     </div>
+                    {isOpenn && (
+                      <div className="conatinercumatede">
+                        <div className="inputContainer">
+                          <input
+                            type="text"
+                            value={Devices}
+                            placeholder="Select Platefrom"
+                            className="custominput"
+                            readOnly
+                            onClick={handltooglenewOptionneww}
+                          />
+                          <span className="requiredText">Required</span>
+                        </div>
+                        {showplateformss && ( // Fixed variable name
+                          <div className="optionsContainer ddsfd ruos">
+                            {MycustomDevices.map((country, index) => (
+                              <div key={index}>{country}</div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
-                  <div class="card card--collapsed">
-                    <div class="card__head-icon">
-                      <h2 class="card__heading text-headline-3">
+                  <div className="card card--collapsed">
+                    <div className="card__head-icon" onClick={toggleDropdown}>
+                      <h2 className="card__heading text-headline-3">
                         Operating systems
                       </h2>
-                      <button class="table-button table-button--open table-button--heading-icon">
-                        {" "}
-                        <ChevronDownIcon className="arrowdown" />
+                      <button className="table-button table-button--open table-button--heading-icon">
+                        {isOpen ? (
+                          <ChevronUpIcon className="arrowup" />
+                        ) : (
+                          <ChevronDownIcon className="arrowdown" />
+                        )}
                       </button>
                     </div>
+                    {isOpen && (
+                      <div className="conatinercumatede">
+                        <div className="inputContainer">
+                          <input
+                            type="text"
+                            value={Devices}
+                            placeholder="Select Platefrom"
+                            className="custominput"
+                            readOnly
+                            onClick={handltooglenewOptionnew}
+                          />
+                          <span className="requiredText">Required</span>
+                        </div>
+                        {showplateforms && ( // Fixed variable name
+                          <div className="optionsContainer ddsfd ruos">
+                            {myplatorms.map((country, index) => (
+                              <div
+                                key={index}
+                                onClick={() => handleCountrySelect(country)}
+                              >
+                                {country}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

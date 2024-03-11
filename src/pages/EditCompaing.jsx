@@ -318,7 +318,7 @@ const EditCompaing = () => {
                   <div>
                     <img src={InpageIcon} alt="" />
                     <h4>Inpage</h4>
-                    <img src={RadionUncheck} alt="" />
+                    <img src={Radiocheck} alt="" />
                   </div>
                 </div>
               </div>
