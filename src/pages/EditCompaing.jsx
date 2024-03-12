@@ -16,6 +16,11 @@ import SmielFaceSVG from "../assets/smile.svg";
 import EyeSVG from "../assets/eye.svg";
 import InpageIcon from "../assets/inpage.svg";
 import AddIcon from "../assets/plus.svg";
+import SolarImage from "../assets/solar.jpeg";
+import SolarImageLarge from "../assets/solarlarge.jpeg";
+import RoofingLargeImage from "../assets/roofinglarge.jpeg";
+import RoofingsmallImage from "../assets/roofingsmall.jpeg";
+
 import {
   FaceSmileIcon,
   ChevronDownIcon,
@@ -36,6 +41,28 @@ const EditCompaing = () => {
   const [trafficPresetsInputValue, setTrafficPresetsInputValue] = useState(
     id == 659465 ? "Ads Solar New" : id == 923765 ? "Ads Roofing 1" : ""
   );
+  const [trafficPresetsInputTitle, setTrafficPresetsInputTitle] = useState(
+    id == 659465
+      ? "Looking for Best Solar Companies. Check Here"
+      : id == 923765
+      ? "Top Rated Roofing Contractors You Can Find Here"
+      : ""
+  );
+  const [trafficPresetsInputDesc, setTrafficPresetsInputDesc] = useState(
+    id == 659465
+      ? "Get Details about Best Companies and You can get Online  Quotes from Top Rated Solar Companies."
+      : id == 923765
+      ? "Choose From the Top Rated Roofing Contractors in USA. Best Roof Repairing and Installation services."
+      : ""
+  );
+  const [trafficPresetsInputLargeImage, setTrafficPresetsInputLargeImage] =
+    useState(
+      id == 659465 ? SolarImageLarge : id == 923765 ? RoofingLargeImage : ""
+    );
+  const [trafficPresetsInputSmallImage, setTrafficPresetsInputSmallImage] =
+    useState(
+      id == 659465 ? SolarImage : id == 923765 ? RoofingsmallImage : ""
+    );
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState(
     "United State of America"
@@ -458,7 +485,123 @@ const EditCompaing = () => {
               </div>
             </section>
             {/* Craeteives section start form there   */}
-
+            <section className="sectionone creativesecton">
+              <h3>Creatives</h3>
+              <div className="createiveheader">
+                <img src={Tooltip} alt="" />
+                <p>
+                  Working with software and utilities? Try auto-generated
+                  creatives! More in the{" "}
+                  <Link
+                    style={{ color: "#3880df" }}
+                    to="https://blog.rollerads.com/2023/10/18/introducing-auto-generated-creatives-for-software-utilities/"
+                  >
+                    blog.
+                  </Link>
+                </p>
+              </div>
+              <div className="genreatebuttonsredion">
+                <div>
+                  <img src={Radiocheck} alt="" />
+                  <p>Manual</p>
+                </div>
+                <div>
+                  <img src={RadionUncheck} alt="" />
+                  <p>Auto-genereated</p>
+                </div>
+              </div>
+              <div className="imagescontainermain">
+                <div>
+                  <img className="dddone" src={trafficPresetsInputSmallImage} alt="" />
+                </div>
+                <div className="secondcontainerimgads">
+                 <img  className="dddtwo" src={trafficPresetsInputLargeImage} alt="" />
+                </div>
+              </div>
+              <div className="emojitextcontinaer">
+                <div className="facecontainer">
+                  <FaceSmileIcon className="smile" />
+                </div>
+                <div className="inputemoijinut">
+                  <input
+                    className="myinputemoitlte pp"
+                    type="text"
+                    placeholder={trafficPresetsInputTitle}
+                  />
+                </div>
+              </div>
+              <div className="selectedtextcontainer">
+                <div>{`{City}`}</div>
+                <div>{`{Country}`}</div>
+              </div>
+              <div className="emojitextcontinaer">
+                <div className="facecontainer">
+                  <FaceSmileIcon className="smile" />
+                </div>
+                <div className="inputemoijinut">
+                  <input
+                    className="myinputemoitlte pp"
+                    type="text"
+                    placeholder={trafficPresetsInputDesc}
+                  />
+                </div>
+              </div>
+              <div className="selectedtextcontainer">
+                <div>{`{City}`}</div>
+                <div>{`{Country}`}</div>
+              </div>
+            </section>
+            <section className="sectionone ssss ff">
+              <h3>Preview</h3>
+              <div className="previewbuttonsconainer"></div>
+              <div className="blackcontainner alsocustom">
+                <div className="crnnrr">
+                  <img
+                    className="chromimage"
+                    src="https://img.icons8.com/?size=40&id=YqsZIFNpoKuB&format=png"
+                    alt=""
+                  />{" "}
+                  <p className="chrome">Chrome. example.rollerads.com .new</p>
+                </div>
+                <div className="flexgridcontainer">
+                  <div>
+                    {" "}
+                    <h5>{trafficPresetsInputTitle}</h5>
+                    <p>{trafficPresetsInputDesc}</p>
+                  </div>
+                  <div>
+                    <img className="solarImage" src={trafficPresetsInputSmallImage} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="blackcontainner alsocustom">
+                <div className="crnnrr">
+                  <img
+                    className="chromimage"
+                    src="https://img.icons8.com/?size=40&id=YqsZIFNpoKuB&format=png"
+                    alt=""
+                  />{" "}
+                  <p className="chrome">Chrome. example.rollerads.com .new</p>
+                </div>
+                <div className="flexgridcontainer">
+                  <div>
+                    {" "}
+                    <h5>{trafficPresetsInputTitle}</h5>
+                    <p>{trafficPresetsInputDesc}</p>
+                  </div>
+                  <div>
+                    <img className="solarImage " src={trafficPresetsInputSmallImage} alt="" />
+                  </div>
+                </div>
+                <div className="largoinone">
+                  <img src={trafficPresetsInputLargeImage} alt="" />
+                </div>
+              </div>
+              <div className="addcreateubuttons">
+                <img src={AddIcon} alt="" />
+                <p>Add creative</p>
+              </div>
+            </section>
             <section className="sectionone countriescontainer">
               <h3>Countries</h3>
               <div className="inputContainer">

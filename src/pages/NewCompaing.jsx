@@ -289,9 +289,9 @@ const NewCompaing = () => {
   const handltooglenewOptionnew = () => {
     setShowPlateforms(!showplateforms);
   };
-  const handltooglenewOptionneww=()=>{
+  const handltooglenewOptionneww = () => {
     setShowPlateformss(!showplateformss);
-  }
+  };
   const myplatorms = ["Windows", "MacOS", "Android", "iOS", "Chrome", "OS"];
   const MycustomDevices = ["Moble", "Tablet", "Desktop"];
   return (
@@ -650,7 +650,7 @@ const NewCompaing = () => {
                         Bidding strategy
                       </h2>
                       <div data-v-2fbd1bc8="" class="rangebar">
-                      <input type="range"/>
+                        <input type="range" />
                         <div
                           data-v-2fbd1bc8=""
                           class="rangebar__legend text-body-3"

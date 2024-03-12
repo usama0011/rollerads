@@ -43,7 +43,7 @@ const Header = ({ routename }) => {
         <div className="timecontainer">{currentTime}  (UTC)</div>
         <div className="balanceContainer">
           <img src={WallatIcon} alt="" />
-          <span>Balance:$17,583.93</span>
+          <span>Balance:$14,719.89</span>
         </div>
         <div className="volteContainer">
           <CreditCardIcon className="creditcardionc" />
